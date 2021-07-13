@@ -1,5 +1,5 @@
-import ramenImg from './ramen-about.jpg';
-import sushiImg from './sushi-about.jpg';
+import ramenImg from './img/ramen-about.jpg';
+import sushiImg from './img/sushi-about.jpg';
 function about(){
   let aboutDiv = document.createElement('div');
   
