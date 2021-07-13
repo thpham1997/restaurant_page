@@ -20,6 +20,15 @@ function contact(){
   contactDiv.appendChild(phone);
   contactDiv.appendChild(email);
   contactDiv.appendChild(map);
+  // class adding
+  contactDiv.classList.add('contact');
+  name.classList.add('contact__name');
+  address.classList.add('contact__address');
+  phone.classList.add('contact__phone');
+  email.classList.add('contact__email');
+  map.classList.add('contact__map');
+  
+  // end of class adding
   return contactDiv;
 }
 

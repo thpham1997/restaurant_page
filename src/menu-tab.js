@@ -23,6 +23,11 @@ function menu() {
     ramenDiv.appendChild(ramenImg);
     ramenDiv.appendChild(ramenDescription);
     menuDiv.appendChild(ramenDiv);
+    // class adding
+    ramenDiv.classList.add('menu__ramen');
+    ramenImg.classList.add('menu__ramen__img');
+    ramenDescription.classList.add('menu__ramen_des');
+    // end of class adding
   }
 
   let sushiTitle = document.createElement('h2');
@@ -37,7 +42,19 @@ function menu() {
     sushiDiv.appendChild(sushiImg);
     sushiDiv.appendChild(sushiDescription);
     menuDiv.appendChild(sushiDiv);
+    // class adding
+    sushiDiv.classList.add('menu__ramen');
+    sushiImg.classList.add('menu__ramen__img');
+    sushiDescription.classList.add('menu__ramen_des');
+    // end of class adding
   }
+
+  // class adding
+  menuDiv.classList.add('menu');
+  ramenTitle.classList.add('menu__title');
+  sushiTitle.classList.add('menu__title');
+
+  // end of class adding
   return menuDiv;
 }
 

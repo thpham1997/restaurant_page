@@ -29,6 +29,13 @@ function navbar() {
   navBar.appendChild(aboutTab);
   navBar.appendChild(menuTab);
   navBar.appendChild(contactTab);
+
+  // class adding
+  navBar.classList.add('nav');
+  aboutTab.classList.add('nav__about');
+  menuTab.classList.add('nav__menu');
+  contactTab.classList.add('nav__contact');
+  // end of class adding
   return navBar;
 }
 
