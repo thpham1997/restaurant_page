@@ -25,7 +25,7 @@ function about() {
   aboutRamen.classList.add('about__ramen')
   aboutPicRamen.classList.add('about__ramen__pic');
   aboutParaRamen.classList.add('about__ramen__para');
-  aboutSushi.classList.add('about__ramen')
+  aboutSushi.classList.add('about__sushi')
   aboutPicSushi.classList.add('about__sushi__pic');
   aboutParaSushi.classList.add('about__sushi__para');
 
