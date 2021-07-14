@@ -2,7 +2,7 @@
 import about from "./about-tab.js";
 import menu from "./menu-tab.js";
 import contact from "./contact-tab.js";
-
+import bgImg from "./img/nav-bg.jpg"
 function navbar() {
   const CONTENT = document.getElementById('content');
   let navBar = document.createElement('ul');
@@ -25,7 +25,8 @@ function navbar() {
     CONTENT.removeChild(CONTENT.lastChild);
     CONTENT.appendChild(contact());
   })
-
+  // cant add image to bg?
+  navBar.style.backgroundImage = bgImg;
   navBar.appendChild(aboutTab);
   navBar.appendChild(menuTab);
   navBar.appendChild(contactTab);
