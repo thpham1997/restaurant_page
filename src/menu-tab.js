@@ -10,6 +10,8 @@ const RAMEN_IMGS = [rImg1, rImg2, rImg3, rImg4];
 const SUSHI_IMGS = [sImg1, sImg2, sImg3, sImg4];
 function menu() {
   let menuDiv = document.createElement('div');
+  let menuRamen = document.createElement('div');
+  let menuSushi = document.createElement('div');
 
   let ramenTitle = document.createElement('h2');
   ramenTitle.innerHTML = 'Ramen';
@@ -17,18 +19,20 @@ function menu() {
   for (let i = 1; i <= 4; i++) {
     let ramenDiv = document.createElement('div');
     let ramenImg = new Image();
-    ramenImg.src = RAMEN_IMGS[i-1];
+    ramenImg.src = RAMEN_IMGS[i - 1];
     let ramenDescription = document.createElement('p');
     ramenDescription.innerHTML = 'Description ramen' + i;
     ramenDiv.appendChild(ramenImg);
     ramenDiv.appendChild(ramenDescription);
-    menuDiv.appendChild(ramenDiv);
+    menuRamen.appendChild(ramenDiv);
+
     // class adding
-    ramenDiv.classList.add('menu__ramen');
+    ramenDiv.classList.add('menu__ramen__' + i);
     ramenImg.classList.add('menu__ramen__img');
-    ramenDescription.classList.add('menu__ramen_des');
+    ramenDescription.classList.add('menu__ramen__des');
     // end of class adding
   }
+  menuDiv.appendChild(menuRamen);
 
   let sushiTitle = document.createElement('h2');
   sushiTitle.innerHTML = 'Sushi';
@@ -36,21 +40,24 @@ function menu() {
   for (let i = 1; i <= 4; i++) {
     let sushiDiv = document.createElement('div');
     let sushiImg = new Image();
-    sushiImg.src = SUSHI_IMGS[i-1];
+    sushiImg.src = SUSHI_IMGS[i - 1];
     let sushiDescription = document.createElement('p');
     sushiDescription.innerHTML = 'Description sushi' + i;
     sushiDiv.appendChild(sushiImg);
     sushiDiv.appendChild(sushiDescription);
-    menuDiv.appendChild(sushiDiv);
+    menuSushi.appendChild(sushiDiv);
     // class adding
-    sushiDiv.classList.add('menu__ramen');
-    sushiImg.classList.add('menu__ramen__img');
-    sushiDescription.classList.add('menu__ramen_des');
+    sushiDiv.classList.add('menu__sushi__' + i);
+    sushiImg.classList.add('menu__sushi__img');
+    sushiDescription.classList.add('menu__sushi__des');
     // end of class adding
   }
+  menuDiv.appendChild(menuSushi);
 
   // class adding
   menuDiv.classList.add('menu');
+  menuRamen.classList.add('menu__ramen');
+  menuSushi.classList.add('menu__sushi')
   ramenTitle.classList.add('menu__title');
   sushiTitle.classList.add('menu__title');
 
