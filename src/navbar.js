@@ -5,38 +5,46 @@ import contact from "./contact-tab.js";
 import bgImg from "./img/nav-bg.jpg"
 function navbar() {
   const CONTENT = document.getElementById('content');
-  let navBar = document.createElement('ul');
-  let aboutTab = document.createElement('li');
-  let menuTab = document.createElement('li');
-  let contactTab = document.createElement('li');
+  let navBar = document.createElement('div');
+  let logo = document.createElement('div');
+  let tabDiv = document.createElement('div');
+  let aboutTab = document.createElement('button');
+  let menuTab = document.createElement('button');
+  let contactTab = document.createElement('button');
 
   aboutTab.innerHTML = 'ABOUT';
-  aboutTab.addEventListener('click', (e)=>{
+  aboutTab.addEventListener('click', (e) => {
     CONTENT.removeChild(CONTENT.lastChild);
     CONTENT.appendChild(about());
   })
   menuTab.innerHTML = 'MENU';
-  menuTab.addEventListener('click', (e)=>{
+  menuTab.addEventListener('click', (e) => {
     CONTENT.removeChild(CONTENT.lastChild);
     CONTENT.appendChild(menu());
   })
   contactTab.innerHTML = 'CONTACT';
-  contactTab.addEventListener('click', (e)=>{
+  contactTab.addEventListener('click', (e) => {
     CONTENT.removeChild(CONTENT.lastChild);
     CONTENT.appendChild(contact());
   })
-  // cant add image to bg?
-  navBar.style.backgroundImage = bgImg;
-  navBar.appendChild(aboutTab);
-  navBar.appendChild(menuTab);
-  navBar.appendChild(contactTab);
-
+  // can added img here
+  navBar.style.backgroundImage = `url(${bgImg})`;
+  
+  tabDiv.appendChild(aboutTab);
+  tabDiv.appendChild(menuTab);
+  tabDiv.appendChild(contactTab);
+  navBar.appendChild(logo);
+  navBar.appendChild(tabDiv);
   // class adding
   navBar.classList.add('nav');
-  aboutTab.classList.add('nav__about');
-  menuTab.classList.add('nav__menu');
-  contactTab.classList.add('nav__contact');
+  logo.classList.add('nav__logo');
+  tabDiv.classList.add('nav__tab');
+  aboutTab.classList.add('nav__tab__about');
+  menuTab.classList.add('nav__tab__menu');
+  contactTab.classList.add('nav__tab__contact');
   // end of class adding
+
+  console.log(bgImg);
   return navBar;
 }
 
