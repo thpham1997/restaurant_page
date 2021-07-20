@@ -2,11 +2,13 @@
 import about from "./about-tab.js";
 import menu from "./menu-tab.js";
 import contact from "./contact-tab.js";
-import bgImg from "./img/nav-bg.jpg"
+import bgImg from "./img/nav-bg.jpg";
+import logoIcon from "../src/img/ramen-logo.png";
 function navbar() {
   const CONTENT = document.getElementById('content');
   let navBar = document.createElement('div');
   let logo = document.createElement('div');
+  let icon = new Image();
   let tabDiv = document.createElement('div');
   let aboutTab = document.createElement('button');
   let menuTab = document.createElement('button');
@@ -29,7 +31,8 @@ function navbar() {
   })
   // can added img here
   navBar.style.backgroundImage = `url(${bgImg})`;
-  
+  icon.src = logoIcon;
+  logo.appendChild(icon);
   tabDiv.appendChild(aboutTab);
   tabDiv.appendChild(menuTab);
   tabDiv.appendChild(contactTab);
@@ -38,6 +41,7 @@ function navbar() {
   // class adding
   navBar.classList.add('nav');
   logo.classList.add('nav__logo');
+  icon.classList.add('nav__logo__icon');
   tabDiv.classList.add('nav__tab');
   aboutTab.classList.add('nav__tab__about');
   menuTab.classList.add('nav__tab__menu');
