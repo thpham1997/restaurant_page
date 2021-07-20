@@ -52,15 +52,60 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .nav {
   color: red;
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 7fr;
-  height: 50vh;
+  height: 25rem;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% 30%;
+}
+.nav__logo {
+  display: grid;
+  place-items: center;
+}
+.nav__logo__icon {
+  width: 10rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.7s;
+}
+.nav__logo__icon:hover {
+  cursor: pointer;
+  width: 8rem;
+}
+.nav__tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.nav__tab * {
+  width: 7rem;
+  height: 2rem;
+  margin: 2rem 3rem;
+  border-radius: 2rem;
+  border-style: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.nav__tab *:hover {
+  background-color: rgba(161, 163, 36, 0.801);
+  box-shadow: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.nav__tab *:focus {
+  height: 2.2rem;
+  font-size: 1.1rem;
+  background-color: rgba(161, 163, 36, 0.801);
 }
 
 .about {
