@@ -7,7 +7,7 @@ import '../dist/css/main.css'
 function main(){
   const CONTENT = document.getElementById('content');
   CONTENT.appendChild(navbar());
-  CONTENT.appendChild(contact());
+  CONTENT.appendChild(about());
 }
 
 main();
