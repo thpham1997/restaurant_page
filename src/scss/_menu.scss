@@ -16,13 +16,14 @@
   grid-template-columns: repeat(2, auto);
   place-items: center;
   margin: 0 auto;
-  border-style: solid;
-  border-color: #0f1c3e;
-  border-width: 0.1rem;
   border-radius: 1rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
   width: 85%;
   padding: 1rem;
-  background-color: rgb(68, 68, 68);
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   @for $i from 1 to 5 {
     &__#{$i} {
       width: 20rem;
@@ -32,8 +33,9 @@
       transition-delay: 0.5s;
 
       &:hover {
-        background-color: rgba(177, 167, 115, 0.829);
+        background-color: rgba(221, 208, 143, 0.829);
         border-radius: 4rem;
+        cursor: pointer;
       }
       &:hover :first-child {
         border-radius: 4rem;
@@ -71,13 +73,11 @@
   grid-template-columns: repeat(2, auto);
   place-items: center;
   margin: 0 auto;
-  border-style: solid;
-  border-color: #0f1c3e;
-  border-width: 0.1rem;
   border-radius: 1rem;
   width: 85%;
   padding: 1rem;
-  background-color: rgb(68, 68, 68);
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   @for $i from 1 to 5 {
     &__#{$i} {
       width: 20rem;
@@ -87,7 +87,7 @@
       transition-delay: 0.5s;
 
       &:hover {
-        background-color: rgba(177, 167, 115, 0.829);
+        background-color: rgba(221, 208, 143, 0.829);
         border-radius: 4rem;
       }
       &:hover :first-child {
