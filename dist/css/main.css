@@ -53,7 +53,7 @@ table {
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .nav {
@@ -110,6 +110,7 @@ body {
 
 .about {
   font-size: 1.5rem;
+  color: white;
 }
 .about__ramen {
   width: 100%;
@@ -168,13 +169,14 @@ body {
   grid-template-columns: repeat(2, auto);
   place-items: center;
   margin: 0 auto;
-  border-style: solid;
-  border-color: #0f1c3e;
-  border-width: 0.1rem;
   border-radius: 1rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
   width: 85%;
   padding: 1rem;
-  background-color: #444444;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 .menu__ramen__1 {
   width: 20rem;
@@ -184,8 +186,9 @@ body {
   transition-delay: 0.5s;
 }
 .menu__ramen__1:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
+  cursor: pointer;
 }
 .menu__ramen__1:hover :first-child {
   border-radius: 4rem;
@@ -206,8 +209,9 @@ body {
   transition-delay: 0.5s;
 }
 .menu__ramen__2:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
+  cursor: pointer;
 }
 .menu__ramen__2:hover :first-child {
   border-radius: 4rem;
@@ -228,8 +232,9 @@ body {
   transition-delay: 0.5s;
 }
 .menu__ramen__3:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
+  cursor: pointer;
 }
 .menu__ramen__3:hover :first-child {
   border-radius: 4rem;
@@ -250,8 +255,9 @@ body {
   transition-delay: 0.5s;
 }
 .menu__ramen__4:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
+  cursor: pointer;
 }
 .menu__ramen__4:hover :first-child {
   border-radius: 4rem;
@@ -286,13 +292,11 @@ body {
   grid-template-columns: repeat(2, auto);
   place-items: center;
   margin: 0 auto;
-  border-style: solid;
-  border-color: #0f1c3e;
-  border-width: 0.1rem;
   border-radius: 1rem;
   width: 85%;
   padding: 1rem;
-  background-color: #444444;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 .menu__sushi__1 {
   width: 20rem;
@@ -302,7 +306,7 @@ body {
   transition-delay: 0.5s;
 }
 .menu__sushi__1:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
 }
 .menu__sushi__1:hover :first-child {
@@ -325,7 +329,7 @@ body {
   transition-delay: 0.5s;
 }
 .menu__sushi__2:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
 }
 .menu__sushi__2:hover :first-child {
@@ -348,7 +352,7 @@ body {
   transition-delay: 0.5s;
 }
 .menu__sushi__3:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
 }
 .menu__sushi__3:hover :first-child {
@@ -371,7 +375,7 @@ body {
   transition-delay: 0.5s;
 }
 .menu__sushi__4:hover {
-  background-color: rgba(177, 167, 115, 0.829);
+  background-color: rgba(221, 208, 143, 0.829);
   border-radius: 4rem;
 }
 .menu__sushi__4:hover :first-child {
@@ -408,6 +412,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2rem auto;
 }
 .contact__information {
   display: flex;
@@ -424,6 +429,7 @@ body {
 }
 .contact__information * {
   margin: 0.4rem 0.3rem;
+  color: white;
 }
 .contact__embed {
   width: 40rem;
